@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+    <head>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="icon" href="./assets/logo/logo.png"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Chats de Loyasse</title>
+    <script src="./js/mobile.js" defer></script>
+    <script id="relative-root" type='text/plain'>./</script>
+</head> 
+    
+    <body>
+        <header id="header">
+    <nav id="nav-placeholder">
+        <div class="logo"> <img src="./assets/logo/logo.png" alt="Logo Association"> </div>
+        <ul>
+            <li><a href="./index.html">Accueil</a></li>
+            <li><a href="./adopter.html">Adopter</a></li>
+            <li><a href="./qui-sommes-nous.html">Qui sommes nous ?</a></li>
+            <li class="dropdown"><a href="#">Nos chats<img src="./assets/icones/arrow.png"></a>
+                <ul class="dropdown-menu">
+                    <li><a href="./nos-chats/nouvelles-chats.html">Des nouvelles de nos chats</a></li>
+                    <li><a href="./nos-chats/chats-partis.html">Ils nous ont quittés</a></li>
+                </ul>
+            </li>
+            <li><a href="./nous-aider.html">Nous aider</a></li>
+            <li class="dropdown"><a href="#">Nos actions<img src="./assets/icones/arrow.png"></a>
+                <ul class="dropdown-menu">
+                    <li><a href="./nos-actions/actualites.html">Nos actions récentes</a></li>
+                    <li><a href="./nos-actions/archives.html">Archives</a></li>
+                    <li><a href="./nos-actions/gazette.html">Gazette</a></li>
+                </ul>
+            </li>
+            <li><a href="./contact.html">Contacts</a></li>
+        </ul>
+    </nav>
+</header>   
+
+        <script src="js/adoption.js" defer></script>
+        <script id="adoption-data" type='application/json'>[{"id":1,"name":"Neige","age":"4 mois","gender":"f","quote":"Une minette bien sympa ! ","description":"Bonjour je m'appelle Neige. Je suis née le 1er juin 2026.\nJe suis une petite minette bien sympa, j'aime jouer avec les autres chats et bien sûr j'aime beaucoup les humains. \nJe vous attends pour mon adoption.\n\n🪪 identifié\n💉 primo vacciné typhus coryza\n🪲 déparasité \n🐛 vermifugé\n🔬 FIV/Leucose négatifs\nPour adopter : envoyez un mail à adoptions.loyasse@gmail.com","imagesSrc":["https://lh3.googleusercontent.com/d/1Q71nE-azA6FQctef-eeSmjS866Luy8CM"]},{"id":2,"name":"Bernie","age":"6 mois","gender":"m","quote":"J'adore mes copains chats ! ","description":"Bernie né le 30 mars 2026, a été trouvé avec son frère et sa sœur dans la rue.\nJe suis un chaton sociable qui aime mes amis les chats. Je suis encore un peu timide avec les humains mais une fois avec ma nouvelle famille, cela devrait s'améliorer rapidement.\n\n🪪 identifié\n💉 primo vacciné typhus coryza\n🪲 déparasité \n🐛 vermifugé\n🔬 FIV/Leucose négatifs\nPour adopter : envoyez un mail à adoptions.loyasse@gmail.com","imagesSrc":["https://lh3.googleusercontent.com/d/1TLNfnxMCgy4QF6RyqzNiVXrnpAW4Rv0t"]},{"id":3,"name":"Hook","age":"1,5 ans","gender":"m","quote":"Actif et les plus beaux yeux verts ! ","description":"Hook est un jeune chat mâle, très proche des humains.Il adore leur compagnie et est toujours en quête de câlins et d’attention. Avec les autres chats, il aime surtout avoir son indépendance et gérer les rencontres à son rythme. Comme il est très actif, il a besoin d’espace pour se dépenser. Un petit extérieur sécurisé serait un vrai plus pour laisser s’exprimer son côté gavroche !\n\nSon moment préféré de la journée ? La partie de foot avec sa famille d’accueil, avant de s’endormir tout contre eux… :)\n\n🪪 identifié\n💉 vacciné\n🪲 déparasité \n🐛 vermifugé\n🔬 FIV/Leucose négatifs\n      STÉRILISÉ\nPour adopter : envoyez un mail à adoptions.loyasse@gmail.com","imagesSrc":["https://lh3.googleusercontent.com/d/1MdNGfbhoHh1pR-PflrooQTvhcOW6DCWk","https://lh3.googleusercontent.com/d/1fnEaMBWta97PSLHlr5QrNWjZdLY1JawC"]}]</script>
+
+        <section class="accueil page-adoption-top">
+            <div class="page-adoption-top-text">
+                <h1 class="title">Adopter le compagnon
+                <span class="title-slider">
+                    <span class="slider">
+                        <span class="slider-word">idéal</span>
+                        <span class="slider-word">de vos rêves</span>
+                        <span class="slider-word">qui changera votre vie</span>
+                        <span class="slider-word">fait pour vous</span>
+                        <span class="slider-word">qui remplira votre coeur</span>
+                        <span class="slider-word">aussi unique que vous</span>
+                        <span class="slider-word">qui vous attend</span>
+                    </span>
+                </span>
+                </h1>
+                    <hr class="page-adoption-separator">
+        </section>
+
+        <!-- Titre de la liste d'adoption -->
+
+        <section class="page-adoption-list">
+            <span class="page-adoption-list-text checkVisibility">
+                <h2 class="subtitle">En attente d'adoption</h2>
+                <p class="text" id="text-adoption-list">Si vous souhaitez en savoir plus à propos d’un chat, cliquez sur sa photo</p>
+            </span>
+
+            <!-- Bouton de filtres en haut de la liste d'adoption -->
+            <!-- Listage par "Tous", "Chatons" ou "Adultes"-->
+
+            <div class="action-buttons">
+                <div class="filter-buttons" role="group" aria-label="Filtrer par âge">
+                    <button id="filterAllButton" class="filter-button filter-active">Tous</button>
+                    <button id="filterAdultesButton" class="filter-button">Adultes</button>
+                    <button id="filterChatonsButton" class="filter-button">Chatons</button>
+                </div>
+            </div>
+
+            <!-- Vue grille de tous les chats a l'adoption -->
+            
+            <div class="page-adoption-grille" id="adoptionGrid"> </div>
+
+            <!-- Vue detaille des chats lors d'un clic sur une card -->
+            <section id="detailView" class="detail-view hidden" aria-labelledby="detailName" role="region">
+                <button id="backButton" class="back-button" aria-label="Retour à la liste">
+                    <img src="assets/icones/icon-arrow-2.svg" alt="Retour">
+                </button>
+                <article class="detail-card">
+                    <img id="detailImage" src="" alt="Photo détaillée du chat" class="detail-image">
+                    <div class="detail-text-content">
+                        <img id="detailGenderIcon" src="" alt="Genre" class="detail-gender-icon">
+                        <h2 id="detailName" class="detail-name">Nom du Chat</h2>
+                        <span id="detailAge" class="detail-age">Âge</span>
+                        <p id="detailQuote" class="detail-quote">"Citation"</p>
+                        <div id="detailDescription" class="detail-description">
+                        </div>
+                    </div>
+                </article>
+                <div class="carousel">
+                    <div class="carousel-photos-container" id="carouselPhotosContainer"></div>
+                    <div class="carousel-buttons-container" id="carouselButtonsContainer"></div>
+                </div>
+            </section>
+
+            <nav role="nav-pagination" aria-label="Pagination des adoptions" id="pagination-section">
+                <ul class="pagination">
+                    <button id="prevButton" aria-label="Page précédente"><img src="assets/icones/icon-arrow-2.svg"></button>
+                    <button id="nextButton" aria-label="Page suivante"><img src="assets/icones/icon-arrow-2.svg"></button>
+                </ul>
+                </nav>
+        </section>
+
+        <div class="footer">
+    <div class="footer-content">
+    <img src="./assets/logo/logo-footer.png" alt="Logo Association">
+        <section class="contact">
+            <div class="contact-link"><img src="./assets/icones/address.png"><p>3, rue Cardinal Gerlier, 69005 LYON</p></div>
+            <div class="contact-link"><img src="./assets/icones/phone.png"><p>07 45 28 80 43</p></div>
+            <div class="contact-link"><img src="./assets/icones/mail.png"><p>chats.loyasse@gmail.com</p></div>
+            <div class="contact-link">
+                <div class="socials">
+                    <a href="https://www.facebook.com/p/Association-Les-Chats-de-Loyasse-100064752067295/?locale=fr_FR"  target="_blank"><img src="./assets/icones/facebook.png"></a>
+                    <a href="https://www.instagram.com/leschatsdeloyasse/"  target="_blank"><img src="./assets/icones/instagram.png"></a>
+                </div>
+        </section>
+    </div>
+    <a href="https://www.journal-officiel.gouv.fr/pages/associations-detail-annonce/?q.id=id:201700211063"  target="_blank">Statut legal</a>
+</div>
+
+        
+    </body>
+</html>

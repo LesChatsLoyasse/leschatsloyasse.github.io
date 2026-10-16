@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+    <head>
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="icon" href="../assets/logo/logo.png"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Chats de Loyasse</title>
+    <script src="../js/mobile.js" defer></script>
+    <script id="relative-root" type='text/plain'>../</script>
+</head> 
+    
+    <body>
+        <header id="header">
+    <nav id="nav-placeholder">
+        <div class="logo"> <img src="../assets/logo/logo.png" alt="Logo Association"> </div>
+        <ul>
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="../adopter.html">Adopter</a></li>
+            <li><a href="../qui-sommes-nous.html">Qui sommes nous ?</a></li>
+            <li class="dropdown"><a href="#">Nos chats<img src="../assets/icones/arrow.png"></a>
+                <ul class="dropdown-menu">
+                    <li><a href="../nos-chats/nouvelles-chats.html">Des nouvelles de nos chats</a></li>
+                    <li><a href="../nos-chats/chats-partis.html">Ils nous ont quittés</a></li>
+                </ul>
+            </li>
+            <li><a href="../nous-aider.html">Nous aider</a></li>
+            <li class="dropdown"><a href="#">Nos actions<img src="../assets/icones/arrow.png"></a>
+                <ul class="dropdown-menu">
+                    <li><a href="../nos-actions/actualites.html">Nos actions récentes</a></li>
+                    <li><a href="../nos-actions/archives.html">Archives</a></li>
+                    <li><a href="../nos-actions/gazette.html">Gazette</a></li>
+                </ul>
+            </li>
+            <li><a href="../contact.html">Contacts</a></li>
+        </ul>
+    </nav>
+</header>   
+        
+        <script src="../js/actions.js" defer></script>
+        <script id="action-data" type='application/json'>[{"id":1,"title":"Les Chats de Loyasse au Forum des associations du 5e","description":"Venez nous rencontrer au Forum des associations du 5e, le samedi 12 septembre 2026, organisé dans le Parc de la Mairie du 5e.\nDe 9h30 à 16h, venez découvrir notre association et échanger avec nous autour de nos actions en faveur des chats.\nVous souhaitez mieux connaître l’association, devenir bénévole, nous soutenir ou simplement en savoir plus sur les chats que nous accompagnons ? Notre équipe sera ravie de vous accueillir et de répondre à toutes vos questions. 🐾\n\n🐾 Nous vous attendons nombreux !","imagesSrc":["https://lh3.googleusercontent.com/d/1OpmUVS2H--onEuo2gFKCDkXBgu3qsRja"]},{"id":2,"title":"Blottis dans un garage","description":"18 mai 2026. Nous avons été recueillis dans un garage, blottis les uns contre les autres pour nous rassurer… \nAujourd’hui, nous sommes enfin en sécurité dans notre famille d’accueil, où nous grandissons bien au chaud en attendant notre future famille .\nA ce jour, les chatons ne sont pas proposés à l’adoption.","imagesSrc":["https://lh3.googleusercontent.com/d/1Hp9zQlQOVft9pJKch93QeK5Bydvy1FHQ"]},{"id":3,"title":"Moka trouvé dans la rue","description":"18 mai 2026. Moi, c’est Moka \nJ’ai été trouvé tout seul dans la rue… mais aujourd’hui, je suis au chaud, en sécurité, et entouré de douceur dans ma famille d’accueil qui me gardera jusqu’à mon adoption.\nMa nouvelle vie commence enfin .\nA ce jour, les chatons ne sont pas proposés à l’adoption.","imagesSrc":["https://lh3.googleusercontent.com/d/1H2lXbx3o6TC-scn_5iXqIY1qReViD383"]},{"id":4,"title":"Urgent: nous recherchons des familles d'accueil pour chatons ! ","description":"L'association Les Chats de Loyasse recherche des familles d'accueil pour chatons ! \n\nVous avez un peu de temps, beaucoup d'amour à donner et envie de faire une bonne action ? Rejoignez notre grande chaine de solidarité ! \n\nTout est pris en charge par l'association: matériel, litière, nourriture et frais vétérinaire. \n\nVous accueillez des chatons chez vous, le temps qu’ils grandissent et trouvent leur famille pour la vie.\nGrâce à vous, on peut sauver des vies ! \n\nIntéressé(e) ? Contactez-nous par mail sur chat.loyasse@gmail.com !","imagesSrc":["https://lh3.googleusercontent.com/d/1ozdZLe2oB8pIk7IEWxorergzyFSh5Vw_"]},{"id":5,"title":"Collecte de nourriture samedi 14 février 2026 !","description":"Retrouvez nous pour une collecte de nourriture pour chats samedi 14 février 2026 au magasin Carrefour Ecully,avenue du Bon Pasteur 69130 Ecully de 8h30 à 19h ! On vous attend nombreux !\n","imagesSrc":["https://lh3.googleusercontent.com/d/1nB4jBreyc0vkSuy6nMKJUF2vQCumXwm2"]},{"id":6,"title":"Collecte de nourriture samedi 6 décembre 2025 !","description":"Retrouvez nous pour une collecte de nourriture pour chats Samedi 6 décembre 2025 au magasin Auchan, 35 Avenue du Général Brosset 69160 Tassin la Demi-Lune de 8h30 à 19h ! On vous attend nombreux !\n","imagesSrc":["https://lh3.googleusercontent.com/d/1WeokyhV-04N56hDtbd5J27yRiQgF1EY8"]}]</script>
+
+        <section class="accueil nos-actions">
+            <div class="accueil-text">
+                <h1 class="title">NOS ACTIONS</h1>
+                <hr class="separator">
+                <p class="text"><strong>Retrouvez ici les actualités concernant Les Chats de Loyasse</strong></p>
+                <p class="text">Pour retrouvez nos actions passées, rendez-vous dans <a href="archives.html">nos archives</a></p>
+            </div>
+        </section>
+
+        <!-- details des actions-->
+        <section class="section-actions">
+            <div class="liste-actions" id="liste-actions">
+            </div>
+
+            <nav role="nav-pagination" aria-label="Pagination des adoptions" id="pagination-section" class="nav-pagination">
+                <ul class="pagination">
+                <button id="prevButton" aria-label="Page précédente"><img src="../assets/icones/icon-arrow-2.svg"></button>
+                <button id="nextButton" aria-label="Page suivante"><img src="../assets/icones/icon-arrow-2.svg"></button>
+                </ul>
+            </nav>
+        </section>
+        
+        <div class="footer">
+    <div class="footer-content">
+    <img src="../assets/logo/logo-footer.png" alt="Logo Association">
+        <section class="contact">
+            <div class="contact-link"><img src="../assets/icones/address.png"><p>3, rue Cardinal Gerlier, 69005 LYON</p></div>
+            <div class="contact-link"><img src="../assets/icones/phone.png"><p>07 45 28 80 43</p></div>
+            <div class="contact-link"><img src="../assets/icones/mail.png"><p>chats.loyasse@gmail.com</p></div>
+            <div class="contact-link">
+                <div class="socials">
+                    <a href="https://www.facebook.com/p/Association-Les-Chats-de-Loyasse-100064752067295/?locale=fr_FR"  target="_blank"><img src="../assets/icones/facebook.png"></a>
+                    <a href="https://www.instagram.com/leschatsdeloyasse/"  target="_blank"><img src="../assets/icones/instagram.png"></a>
+                </div>
+        </section>
+    </div>
+    <a href="https://www.journal-officiel.gouv.fr/pages/associations-detail-annonce/?q.id=id:201700211063"  target="_blank">Statut legal</a>
+</div>
+
+    </body>
+</html>
